@@ -1,0 +1,317 @@
+$green: #b5eb39
+$dark: #4b4b4b
+$grey: #aaaaaa
+
+.container 
+  max-width: 1170px
+  padding: 0 15px
+  color: $dark
+
+.big-title 
+  +bold
+  font-size: 62px
+  color: #ffffff
+  margin: 0
+  @media ( max-width: 1140px )
+    font-size: 48px
+  @media ( max-width: 790px )
+    font-size: 35px 
+  @media ( max-width: 390px )
+    font-size: 25px    
+  &_black
+    font-size: 62px
+    text-transform: uppercase
+    font-weight: 400
+    color: $green
+    @media ( max-width: 1140px )
+      font-size: 48px
+    @media ( max-width: 690px )
+      font-size: 40px 
+   
+   
+      
+
+.subtitle
+  font-size: 16px
+  color: #ffffff
+  +regular
+  &_italic
+    font-size: 20px
+    +italic
+    color: #ffffff
+  
+
+.section-title
+  +semibold
+  text-transform: uppercase
+  color: #000000
+  font-size: 30px
+  margin: 0
+  @media  ( max-width: 590px )
+    font-size: 25px
+  &_secondary
+    +italic
+    text-transform: uppercase
+    font-size: 30px
+    margin: 0 0 0 100px
+    @media  ( max-width: 790px )
+      margin: 0 0 0 80px
+    @media  ( max-width: 550px )
+      width: 320px
+      margin: auto
+    @media  ( max-width: 350px )
+      width: 280px
+    &-green
+      color: $green
+      margin-top: 30px
+      @media  ( max-width: 790px )
+        margin-top: 0
+      @media  ( max-width: 390px )
+        margin-top: 30px
+        
+        
+    &-black
+      color: #000000
+      margin-top: 30px
+      @media  ( max-width: 790px )
+        margin-top: 0
+      @media  ( max-width: 390px )
+        margin-top: 30px
+        
+        
+    &-yellow
+      color: #ddf509
+      margin-top: 30px
+      @media  ( max-width: 790px )
+        margin-top: 0
+      @media  ( max-width: 390px )
+        margin-top: 30px
+        
+        
+    &-transparent
+      color: transparent
+    @media ( max-width: 1140px )
+      font-size: 40px
+    @media ( max-width: 550px )
+      font-size: 35px  
+    @media ( max-width: 390px )
+      font-size: 25px    
+  &_black
+    font-size: 62px
+    text-transform: uppercase
+    font-weight: 400
+    color: $green
+    @media ( max-width: 1140px )
+      font-size: 48px
+    @media ( max-width: 690px )
+      font-size: 40px 
+
+.description
+  &_big
+    +regular
+    font-size: 20px
+    color: #ffff
+    @media ( max-width: 1140px )
+      font-size: 16px
+    @media ( max-width: 550px )
+      font-size: 14px
+  &_small
+    +light
+    font-size: 14px
+    line-height: 1.5
+    @media ( max-width: 490px )
+      font-size: 12px
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50px
+  width: 190px
+  text-transform: uppercase
+  color: #ffff
+  +bold
+  font-size: 14px
+  text-decoration: none
+  background-color: $green
+  border-radius: 3px
+  margin: 0
+  transition: .3s
+  &:focus
+    outline: none
+  &:hover
+    background-color: #a1d132
+  &:active
+    background-color: #76a014
+  &-wrap
+    display: flex
+    width: 320px
+    @media ( max-width: 550px )
+      justify-content: start
+      margin: auto
+    @media ( max-width: 350px )
+      max-width: 280px
+      
+    
+.close-btn
+  position: absolute
+  left: 5px
+  top: 0
+  font-size: 27px
+  color: #ffff
+  cursor: pointer
+  transition: .2s
+  &:hover
+    opacity: .8
+
+.arrow 
+  width: 20px
+  height: 20px
+  cursor: pointer
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  &_left
+    margin-right: 15px
+    background-image: url('../img/prew.svg')
+    @media ( max-width: 790px )
+      margin-right: 5px
+  &_right
+    margin-left: 15px
+    background-image: url('../img/next.svg')   
+    @media ( max-width: 790px )
+      margin-left: 5px
+       
+  &-container
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 60px
+    height: 60px
+    background-color: #afabab99
+    border-radius: 3px
+    cursor: pointer
+    transition: .3s
+    z-index: 2
+    &:hover
+      background-color: #a19f9f99
+    &:active
+      background-color: #8b8a8a77
+    &:focus
+      transition: 1s
+    @media ( max-width: 790px )
+      width: 40px
+    @media ( max-width: 430px )
+      display: none !important
+      background-color: transparent
+      
+
+.form-search
+  display: none
+  position: absolute
+  left: -15px
+  right: -15px
+  top: 0  
+  z-index: 4
+.search
+  &__wrap
+    display: flex
+    position: relative
+    align-items: center
+    width: 100%
+    height: 60px
+    z-index: 3
+    background-color: #ffff
+  &__input
+    width: calc(100% - 80px)
+    height: 100%
+    +light
+    font-size: 12px
+    padding: 0 0 0 15px
+    margin-right: 3px
+    border: none
+    border-radius: 2px
+    +italic
+    font-size: 16px
+    outline: none
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    cursor: pointer
+    &-logo
+      background: url("../img/search.svg")
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      width: 15px
+      height: 15px
+  &__close-btn
+    position: absolute
+    right: 15px
+    top: calc(50% - 20px)
+    font-size: 35px
+
+.logo
+  width: 40px
+  height: 40px
+  &-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    background-color: $green
+    border-radius: 50%
+    margin-bottom: 34px
+
+.rotated
+  transform: rotate(360deg)
+
+.item-title
+  +bold
+  text-transform: uppercase
+  font-size: 18px
+  color: #000000
+  @media ( max-width: 590px )
+    font-size: 16px
+.moved
+  transform: translateX(-40%)
+  @media ( max-width: 850px )
+    transform: translateX(-50%)
+  @media ( max-width: 790px )
+    transform: translateX(-100%)
+  &_alt 
+    transform: translateX(50%)
+.slick-slide
+  outline: none
+  @media ( max-width: 430px )
+    padding-right: 100px
+    
+.slick-dots
+  position: absolute
+  bottom: -50px
+  @media  ( max-width: 700px  )
+    bottom: -90px
+.slick-dots li button
+  font-size: 0
+  width: 15px
+  height: 15px
+  background-color: rgba(255, 255, 255, .5)
+  border-radius: 50%
+.slick-dots li.slick-active button
+  background-color: #fff
+  transition: 1s
+
+@media ( max-width: 1140px )
+  .hero
+    height: 400px
+
+  
+     
+
+
+
+
+  

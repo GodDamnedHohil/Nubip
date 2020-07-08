@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Light.woff') format('woff'),
+  url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+  url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light Italic';
+  src: url('../fonts/OpenSans-LightItalic.eot');
+  src: url('../fonts/OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-LightItalic.woff') format('woff'),
+  url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin light {
+  font-family: 'Open Sans Light';
+  font-weight: 300;
+}
+
+@mixin italic {
+  font-family: 'Open Sans Light Italic';
+}
+
+@mixin regular {
+  font-family: 'Open Sans Regular';
+  font-weight: 400;
+}
+
+@mixin semibold {
+  font-family: 'Open Sans Semibold';
+  font-weight: 500;
+}
+
+@mixin bold {
+  font-family: 'Open Sans Bold';
+  font-weight: 600;
+}
+
+@mixin bold-secondary {
+  font-family: 'Roboto Condensed Bold';
+}
+
+@mixin regular-secondary {
+  font-family: 'Roboto Condensed Regular';
+}
+
+
+ 
+

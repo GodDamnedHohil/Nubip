@@ -1,0 +1,92 @@
+.video
+  position: relative
+  height: 630px
+  width: 100%
+  background: url('../img/video-bg.jpeg')
+  background-size: cover
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: #010518b7
+    z-index: -1
+  &__inner
+    width: 100%
+    height: 100%
+    margin: auto
+  &__title
+    color: #ffff
+    margin: 35px 0
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      width: 100%
+      margin-bottom: 70px
+  &__slider
+    display: flex
+    min-width: 0
+    height: 400px
+    justify-content: center
+    padding: 0 63px
+  &__slide
+    display: flex !important
+    justify-content: center 
+    min-width: 0
+  &-arrow-wrap
+    &_right
+      right: 0
+  &_img
+    width: 400px
+    height: 400px
+    cursor: pointer
+    transition: .3s
+    &:hover
+      width: 430px
+      height: 430px
+  &-link
+    color: $grey
+    text-decoration: none
+
+@media ( max-width: 1360px )
+  .video
+    &_img
+      width: 360px
+      height: 360px
+
+@media ( max-width: 950px )
+  .video
+    &_img
+      width: 350px
+      height: 350px
+      &:hover
+        width: 360px
+        height: 360px
+
+@media ( max-width: 550px )
+  .video
+    &__slide
+      padding: 0 
+    &_img
+      width: 250px
+      height: 250px
+      &:hover
+        width: 260px
+        height: 260px
+
+@media  ( max-width: 430px )
+  .video
+    &__slider
+      padding: 0
+    &_img
+      width: 200px
+      height: 200px
+      &:hover
+        width: 210px
+        height: 210px
+  
+  
