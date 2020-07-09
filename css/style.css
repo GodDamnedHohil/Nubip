@@ -463,6 +463,7 @@
   right: 15px;
   top: calc(50% - 20px);
   font-size: 35px;
+  cursor: pointer;
 }
 
 .logo {
@@ -2173,8 +2174,6 @@
   position: relative;
   height: 630px;
   width: 100%;
-  background: url("../img/video-bg.jpeg");
-  background-size: cover;
 }
 
 .video::after {
