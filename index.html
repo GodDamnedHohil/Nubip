@@ -233,7 +233,6 @@
             </div>
           </div>
         </div>
-
       </div> 
       <!-- ^ Authors ^ -->
       <!-- Sidebar -->
@@ -255,11 +254,20 @@
       </div>
       <!-- ^ Sidebar ^ -->
     </div>
+      <div class="video-offer">
+        <div class="container video-offer__inner">
+          <div class="video-offer-title-wrap">
+            <h2 class="section-title video-offer-title">Почему мы?</h2>
+          </div>
+          <iframe id="video-offer" width="560" height="315" src="https://www.youtube.com/embed/3TQdddJ1ATc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
   </header>
   <!-- ^ Header ^ -->
   <main>
+    
     <!-- activities -->
-    <section>
+    <section class="activities-section">
       <div class="activities">
         <div class="container activities__inner">
           <div class="activities-title-container">
@@ -312,6 +320,7 @@
       </div>
     </section>
     <!-- ^ activities ^ -->
+
     <!-- offer -->
     <section>
       <div class="offer">
@@ -375,8 +384,9 @@
       </div>
     </section>
     <!-- ^ offer ^ -->
+
     <section class="development-section"> 
-      <div class="development">
+      <div class="development" data-vide-bg="video/development-video-bg.mp4">
         <div class="container development__inner">
           <div class="development__galery">
             <div class="development__galery-inner">
@@ -662,5 +672,6 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
   <script src="js/main.js"></script>
 </body>
