@@ -561,9 +561,6 @@
 
 .header-section {
   height: fit-content;
-  background-image: url("../img/video-offer-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .header {
