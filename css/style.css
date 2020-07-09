@@ -568,7 +568,7 @@
 
 .header {
   position: relative;
-  height: fit-content;
+  height: 600px;
   width: 100%;
   overflow: hidden;
 }
@@ -579,8 +579,8 @@
   right: 0;
   left: 0;
   top: 0;
-  bottom: -1000px;
-  background-color: rgba(9, 22, 9, 0.247);
+  bottom: 0;
+  background-color: rgba(9, 22, 9, 0.1);
   z-index: -1;
 }
 
@@ -1308,8 +1308,18 @@
 .video-offer {
   position: relative;
   width: 100%;
-  margin-top: 100px;
-  height: 1000px;
+  height: 900px;
+}
+
+.video-offer::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(9, 22, 9, 0.1);
+  z-index: -1;
 }
 
 .video-offer__inner {
