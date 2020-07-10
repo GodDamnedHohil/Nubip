@@ -117,8 +117,8 @@ $(document).ready(function(){
 
 
   $('.modal-window-change-btn').on('click', function(){
-      $('.modal-window').hide(1000);
-      $('.authors').show(900);
+      $('.modal-window').hide(900);
+      $('.authors').show(1000);
       $('.modal-window-change-btn-icon').toggleClass('rotated');
   })
   $('.authors-window-change-btn').on('click', function(){
@@ -147,6 +147,7 @@ $(document).ready(function(){
     $('.authors').hide(500);
     $('.header__inner').removeClass('moved');
     $('.authors').removeClass('initialized');
+    $('.modal-window').removeClass('initialized');
     $('.menu__menu-logo').removeClass('menu__menu-logo-initialized');
     $('.arrow-container').show(300);
   })

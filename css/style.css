@@ -483,6 +483,7 @@
 }
 
 .rotated {
+  transition: 1s;
   transform: rotate(360deg);
 }
 
@@ -562,6 +563,8 @@
 
 .header-section {
   height: fit-content;
+  background-size: auto !important;
+  background-position: 0% 0% !important;
 }
 
 .header {
@@ -967,6 +970,7 @@
   align-items: center;
   height: 90px;
   width: 100%;
+  padding-right: 5px;
 }
 
 .authors-galery__item:after {
@@ -1033,38 +1037,30 @@
   font-size: 16px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 530px) {
   .authors-text_italic {
     font-size: 14px;
     padding-right: 5px;
+    width: 124px;
   }
 }
 
 .authors-text-wrap {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
   width: 100%;
 }
 
 @media (min-width: 560px) and (max-width: 790px) {
   .authors-text-wrap {
     height: 60px;
-    max-width: none;
-    width: calc(50%-90px);
   }
 }
 
 .authors-bottom-row {
   display: flex;
   justify-content: space-between;
-  max-width: 250px;
-}
-
-@media (min-width: 560px) and (max-width: 790px) {
-  .authors-bottom-row {
-    max-width: 77%;
-  }
+  max-width: 99%;
 }
 
 .sidebar {
@@ -1292,8 +1288,8 @@
 }
 
 .modal-window-change-btn-icon {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-image: url("../img/array.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1447,10 +1443,6 @@
   position: relative;
   height: 510px;
   width: 100%;
-  background-image: url("../img/offer-bg-2.jpg");
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
 }
 
 .offer::after {
@@ -1868,8 +1860,6 @@
   position: relative;
   height: 630px;
   width: 100%;
-  background: url("../img/reviews-bg.jpg");
-  background-size: cover;
 }
 
 .reviews::after {

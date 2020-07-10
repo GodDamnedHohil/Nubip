@@ -2,10 +2,6 @@
   position: relative;
   height: 510px;
   width: 100%;
-  background-image: url('../img/offer-bg-2.jpg');
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
   &::after {
     position: absolute;
     content: '';
